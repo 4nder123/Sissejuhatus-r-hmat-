@@ -2,19 +2,22 @@ body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+.content {
+    margin-top: 10px;
+    background: lightgray;
+    border-radius: 20px;
+    padding: 1px 15px;
+}
 
-.content{
+.content-table{
     table-layout: fixed;
     margin-top: 10px;
     width: 100%;
-    border-style:solid;
-    background: lightgray;
-    border: none;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 
-
-.content td,th{
+.content-table td,th{
     width: 33%;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -22,14 +25,25 @@ body{
     border-right: 2px solid white;
 }
 
-.content td {
+.content-table tr{
+    background: lightgray;
+}
+
+.content-table tr:last-child td {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.content-table td {
     padding: 20px;
     vertical-align: top;
     text-align: left;
 }
-.content th {
+.content-table th {
     font-size:x-large;
     padding-top: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .nav ul li{
@@ -48,11 +62,13 @@ body{
 
 .nav ul li:hover{
     background: #bbb;
+    border-radius: 10px;
 }
 .nav {
     padding: 4px;
     padding-left: 0;
     background: lightgray;
+    border-radius: 10px;
 }
 .nav ul {
     padding-left: 0;
@@ -60,6 +76,7 @@ body{
 
 .nav li.active {
     background-color: #ababab;
+    border-radius: 10px;
 }
 
 .map {
