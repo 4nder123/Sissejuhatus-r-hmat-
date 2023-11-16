@@ -84,3 +84,12 @@ body{
     height:450px;
     border: none;
 }
+
+.magInfo .magInfo_tartu{
+    display: inline-block;
+}
+.magInfo .magInfo_taltech{
+    display: inline-block;
+    vertical-align:top;
+    float: right;
+}
